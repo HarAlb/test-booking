@@ -41,7 +41,7 @@ class AppServiceProvider extends ServiceProvider
             UserRepository::class
         );
 
-        app()->bind(
+        app()->singleton(
             AuthTokenServiceInterface::class,
             AuthTokenService::class
         );
